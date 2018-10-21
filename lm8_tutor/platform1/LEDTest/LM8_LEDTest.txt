@@ -1,0 +1,15 @@
+This example exercises the LEDs on LatticeMico8 Development board.
+
+It scrolls a running pattern on the LEDs.
+
+ PREREQUISITES:
+                                                                                                    
+ - GPIO with 4-bit output named LED connected to the board's LED pins.
+
+***************************************************************************
+This example will run on the Lattice MachXO2 Control board
+using LM8_PlatformA & targeting a LCMXO2-1200HC device.  
+***************************************************************************
+
+
+ 

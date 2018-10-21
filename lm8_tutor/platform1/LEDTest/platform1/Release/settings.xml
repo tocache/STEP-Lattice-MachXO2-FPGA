@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROJECT path="..">
+<SYSLIB>
+<MSB_FILE path="./../../soc" name="platform1.msb" />
+<LATTICE_MDK_PERIPHERALS rootdir="../../../soc/../components"/>
+<BUILD_CFG name="Release"/>
+<USER_PREFS name="user.pref" path=".."/>
+<BUILD>
+<COMPILER flags=" -I./../platform1 -ffunction-sections -mcall-prologues -Os -Wall"/>
+</BUILD>
+</SYSLIB>
+</PROJECT>
