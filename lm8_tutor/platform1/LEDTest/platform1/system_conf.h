@@ -74,5 +74,31 @@
 #define UART_LCR_SET_BREAK  (0)
 #define UART_FIFO  (0)
 
+/*
+ * DIPSW component configuration
+ */
+#define DIPSW_NAME  "DIPSW"
+#define DIPSW_BASE_ADDRESS  (0x80000020)
+#define DIPSW_SIZE  (16)
+#define DIPSW_CHARIO_IN        (0)
+#define DIPSW_CHARIO_OUT       (0)
+#define DIPSW_WB_DAT_WIDTH  (8)
+#define DIPSW_WB_ADR_WIDTH  (4)
+#define DIPSW_ADDRESS_LOCK  (0)
+#define DIPSW_DISABLE  (0)
+#define DIPSW_OUTPUT_PORTS_ONLY  (0)
+#define DIPSW_INPUT_PORTS_ONLY  (1)
+#define DIPSW_TRISTATE_PORTS  (0)
+#define DIPSW_BOTH_INPUT_AND_OUTPUT  (0)
+#define DIPSW_DATA_WIDTH  (4)
+#define DIPSW_INPUT_WIDTH  (1)
+#define DIPSW_OUTPUT_WIDTH  (1)
+#define DIPSW_IRQ_MODE  (0)
+#define DIPSW_LEVEL  (0)
+#define DIPSW_EDGE  (0)
+#define DIPSW_EITHER_EDGE_IRQ  (0)
+#define DIPSW_POSE_EDGE_IRQ  (0)
+#define DIPSW_NEGE_EDGE_IRQ  (0)
+
 
 #endif /* __SYSTEM_CONFIG_H_ */

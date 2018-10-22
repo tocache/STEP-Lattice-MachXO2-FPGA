@@ -2,6 +2,7 @@
 #define LATTICE_DDINIT_HEADER_FILE
 #include "stddef.h"
 #include "stddef.h"
+#include "stddef.h"
 /* platform frequency in MHz */
 #define MICO8_CPU_CLOCK_MHZ (12000000)
 
@@ -124,6 +125,13 @@ extern struct st_MicoUartCtx_t uart_core_uart;
 
 /* declare uart instance of uart_core */
 extern void MicoUartInit(struct st_MicoUartCtx_t*);
+
+
+/* gpio instance DIPSW*/
+extern struct st_MicoGPIOCtx_t gpio_DIPSW;
+
+/* declare DIPSW instance of gpio */
+extern void MicoGPIOInit(struct st_MicoGPIOCtx_t*);
 
 extern int main();
 

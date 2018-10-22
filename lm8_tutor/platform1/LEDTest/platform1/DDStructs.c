@@ -80,3 +80,18 @@ struct st_MicoUartCtx_t uart_core_uart = {
 #endif
 };
 
+
+/* gpio instance DIPSW*/
+struct st_MicoGPIOCtx_t gpio_DIPSW = {
+    "DIPSW",
+    0x0020,
+    255,
+    0,
+    1,
+    0,
+    0,
+    4,
+    1,
+    1,
+    0};
+

@@ -20,18 +20,6 @@ Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 
 Part used: LCMXO2-4000HCCSBGA132, Performance used: 4.
 
-    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf(24): Semantic error in &quot;LOCATE COMP &quot;rgb1[0]&quot; SITE &quot;M2&quot; ;&quot;: " arg1="rgb1[0]" arg2="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf" arg3="24"  />
-    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf(25): Semantic error in &quot;LOCATE COMP &quot;rgb1[1]&quot; SITE &quot;N2&quot; ;&quot;: " arg1="rgb1[1]" arg2="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf" arg3="25"  />
-    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf(26): Semantic error in &quot;LOCATE COMP &quot;rgb1[2]&quot; SITE &quot;P2&quot; ;&quot;: " arg1="rgb1[2]" arg2="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf" arg3="26"  />
-    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf(27): Semantic error in &quot;LOCATE COMP &quot;rgb2[0]&quot; SITE &quot;P4&quot; ;&quot;: " arg1="rgb2[0]" arg2="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf" arg3="27"  />
-    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf(28): Semantic error in &quot;LOCATE COMP &quot;rgb2[1]&quot; SITE &quot;N3&quot; ;&quot;: " arg1="rgb2[1]" arg2="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf" arg3="28"  />
-    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf(29): Semantic error in &quot;LOCATE COMP &quot;rgb2[2]&quot; SITE &quot;M3&quot; ;&quot;: " arg1="rgb2[2]" arg2="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf" arg3="29"  />
-    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf(30): Semantic error in &quot;IOBUF PORT &quot;rgb1[0]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="rgb1[0]" arg2="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf" arg3="30"  />
-    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf(31): Semantic error in &quot;IOBUF PORT &quot;rgb1[1]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="rgb1[1]" arg2="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf" arg3="31"  />
-    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf(32): Semantic error in &quot;IOBUF PORT &quot;rgb1[2]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="rgb1[2]" arg2="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf" arg3="32"  />
-    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf(33): Semantic error in &quot;IOBUF PORT &quot;rgb2[0]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="rgb2[0]" arg2="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf" arg3="33"  />
-    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf(34): Semantic error in &quot;IOBUF PORT &quot;rgb2[1]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="rgb2[1]" arg2="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf" arg3="34"  />
-    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf(35): Semantic error in &quot;IOBUF PORT &quot;rgb2[2]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="rgb2[2]" arg2="D:/LatticeMico8Projects/lm8_tutor/platform1.lpf" arg3="35"  />
 Loading device for application map from file 'xo2c4000.nph' in environment: D:/lscc/diamond/3.10_x64/ispfpga.
 Package Status:                     Final          Version 1.44.
 
@@ -48,16 +36,16 @@ Design Summary:
    Number of registers:    265 out of  4635 (6%)
       PFU registers:          265 out of  4320 (6%)
       PIO registers:            0 out of   315 (0%)
-   Number of SLICEs:       384 out of  2160 (18%)
-      SLICEs as Logic/ROM:    348 out of  2160 (16%)
+   Number of SLICEs:       390 out of  2160 (18%)
+      SLICEs as Logic/ROM:    354 out of  2160 (16%)
       SLICEs as RAM:           36 out of  1620 (2%)
       SLICEs as Carry:         44 out of  2160 (2%)
-   Number of LUT4s:        757 out of  4320 (18%)
-      Number used as logic LUTs:        597
+   Number of LUT4s:        769 out of  4320 (18%)
+      Number used as logic LUTs:        609
       Number used as distributed RAM:    72
       Number used as ripple logic:       88
       Number used as shift registers:     0
-   Number of PIO sites used: 16 + 4(JTAG) out of 105 (19%)
+   Number of PIO sites used: 22 + 4(JTAG) out of 105 (25%)
    Number of block RAMs:  6 out of 10 (60%)
    Number of GSRs:  1 out of 1 (100%)
    EFB used :       No
@@ -85,62 +73,62 @@ Design Summary:
    Number of Clock Enables:  30
      Net counter_2: 1 loads, 1 LSLICEs
      Net lm8_inst/clk_i_c_enable_67: 1 loads, 1 LSLICEs
-     Net lm8_inst/clk_i_c_enable_69: 1 loads, 1 LSLICEs
-     Net lm8_inst/clk_i_c_enable_88: 6 loads, 6 LSLICEs
-     Net lm8_inst/clk_i_c_enable_85: 3 loads, 3 LSLICEs
-     Net lm8_inst/PIO_OUT_7__N_967: 4 loads, 4 LSLICEs
-     Net lm8_inst/clk_i_c_enable_71: 4 loads, 4 LSLICEs
-     Net lm8_inst/dat_o_7__N_1075: 5 loads, 5 LSLICEs
-     Net lm8_inst/clk_i_c_enable_15: 4 loads, 4 LSLICEs
-     Net lm8_inst/clk_i_c_enable_70: 4 loads, 4 LSLICEs
-     Net lm8_inst/clk_i_c_enable_68: 2 loads, 2 LSLICEs
-     Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/clk_i_c_enable_73: 4 loads, 4 LSLICEs
-     Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/clk_i_c_enable_74: 9 loads, 9 LSLICEs
-     Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/clk_i_c_enable_81: 1 loads, 1 LSLICEs
+     Net lm8_inst/clk_i_c_enable_8: 4 loads, 4 LSLICEs
+     Net lm8_inst/clk_i_c_enable_73: 4 loads, 4 LSLICEs
+     Net lm8_inst/clk_i_c_enable_72: 4 loads, 4 LSLICEs
+     Net lm8_inst/clk_i_c_enable_71: 2 loads, 2 LSLICEs
+     Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/clk_i_c_enable_92: 1 loads, 1 LSLICEs
      Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/clk_i_c_enable_101: 2 loads, 2 LSLICEs
-     Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/clk_i_c_enable_75: 1 loads, 1 LSLICEs
-     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/clk_i_c_enable_45: 4 loads, 4 LSLICEs
+     Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/clk_i_c_enable_74: 4 loads, 4 LSLICEs
+     Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/clk_i_c_enable_76: 9 loads, 9 LSLICEs
+     Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/clk_i_c_enable_78: 1 loads, 1 LSLICEs
+     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/clk_i_c_enable_99: 2 loads, 2 LSLICEs
+     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/clk_i_c_enable_39: 4 loads, 4 LSLICEs
+     Net lm8_inst/clk_i_c_enable_95: 6 loads, 6 LSLICEs
+     Net lm8_inst/clk_i_c_enable_91: 3 loads, 3 LSLICEs
+     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/clk_i_c_enable_83: 1 loads, 1 LSLICEs
      Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/hunt_one_N_1289: 1 loads, 1 LSLICEs
-     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/clk_i_c_enable_76: 1 loads, 1 LSLICEs
-     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/clk_i_c_enable_79: 1 loads, 1 LSLICEs
-     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/clk_i_c_enable_92: 2 loads, 2 LSLICEs
-     Net lm8_inst/LM8interrupts_0__I_0/u_intface/clk_i_c_enable_46: 4 loads, 4 LSLICEs
-     Net lm8_inst/PIO_DATA_RE_EN: 2 loads, 2 LSLICEs
+     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/clk_i_c_enable_90: 1 loads, 1 LSLICEs
+     Net lm8_inst/LM8interrupts_0__I_0/u_intface/clk_i_c_enable_41: 4 loads, 4 LSLICEs
+     Net lm8_inst/dat_o_7__N_1075: 5 loads, 5 LSLICEs
+     Net lm8_inst/clk_i_c_enable_86: 1 loads, 1 LSLICEs
      Net lm8_inst/LM8/prom_enable: 11 loads, 3 LSLICEs
-     Net lm8_inst/LM8/data_cyc: 6 loads, 6 LSLICEs
      Net lm8_inst/LM8/page_ptr1_7__N_673: 8 loads, 8 LSLICEs
-     Net lm8_inst/LM8/clk_i_c_enable_99: 4 loads, 4 LSLICEs
+     Net lm8_inst/LM8/data_cyc: 6 loads, 6 LSLICEs
+     Net lm8_inst/LM8/clk_i_c_enable_89: 4 loads, 4 LSLICEs
      Net lm8_inst/LM8/im_nxt_7__N_949: 5 loads, 5 LSLICEs
+     Net lm8_inst/PIO_OUT_7__N_967: 4 loads, 4 LSLICEs
      Net lm8_inst/LM8/addr_cyc: 7 loads, 7 LSLICEs
-     Net lm8_inst/LM8/u1_isp8_core/clk_i_c_enable_78: 1 loads, 1 LSLICEs
+     Net lm8_inst/LM8/clk_i_c_enable_85: 1 loads, 1 LSLICEs
+     Net lm8_inst/PIO_DATA_RE_EN: 2 loads, 2 LSLICEs
    Number of LSRs:  12
      Net reset_n_c: 2 loads, 2 LSLICEs
-     Net lm8_inst/n6920: 1 loads, 1 LSLICEs
      Net lm8_inst/uartUART_ACK_O: 1 loads, 1 LSLICEs
-     Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/n6931: 2 loads, 2 LSLICEs
-     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/n1454: 6 loads, 6 LSLICEs
+     Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/n7284: 2 loads, 2 LSLICEs
+     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/n1481: 6 loads, 6 LSLICEs
      Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/hunt: 1 loads, 1 LSLICEs
+     Net lm8_inst/n2529: 3 loads, 3 LSLICEs
      Net lm8_inst/LM8interrupts_0__I_0/rbr_rd: 1 loads, 1 LSLICEs
-     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/n3749: 3 loads, 3 LSLICEs
-     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/n4002: 1 loads, 1 LSLICEs
+     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/n2523: 1 loads, 1 LSLICEs
      Net lm8_inst/GPIO_WE_I_N_1532: 1 loads, 1 LSLICEs
+     Net lm8_inst/n7263: 1 loads, 1 LSLICEs
      Net lm8_inst/LM8/core_rst_n: 67 loads, 67 LSLICEs
-     Net lm8_inst/LM8/n3994: 1 loads, 1 LSLICEs
+     Net lm8_inst/LM8/n4276: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net lm8_inst/LM8/core_rst_n: 72 loads
-     Net lm8_inst/LM8/prom_ready: 61 loads
-     Net lm8_inst/LM8/prom_init.memspeedasyncdisablenoreg18112048/addr10_ff: 45 loads
-     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/n45: 36 loads
-     Net lm8_inst/selected_1: 32 loads
-     Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/counter_0: 29 loads
-     Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/n2127: 29 loads
+     Net lm8_inst/LM8/prom_ready: 64 loads
+     Net lm8_inst/LM8/prom_init.memspeedasyncdisablenoreg18112048/addr10_ff: 43 loads
+     Net lm8_inst/LM8interrupts_0__I_0/u_rxcver/n55: 36 loads
+     Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/counter_0: 31 loads
+     Net lm8_inst/LM8interrupts_0__I_0/u_txmitt/n2156: 31 loads
+     Net lm8_inst/n7264: 31 loads
      Net lm8_inst/LM8/instr_10: 25 loads
      Net lm8_inst/LM8/instr_8: 25 loads
      Net lm8_inst/LM8/instr_9: 25 loads
  
 
-   Number of warnings:  12
+   Number of warnings:  0
    Number of errors:    0
 
 
@@ -148,7 +136,7 @@ Design Summary:
 INFO: Design contains EBR with GSR enabled. The GSR is only applicable for output registers except FIFO. 
 
 
-Total CPU Time: 1 secs  
+Total CPU Time: 0 secs  
 Total REAL Time: 0 secs  
 Peak Memory Usage: 53 MB
 
@@ -165,7 +153,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "platform1_platform1_map.ncd"
-Sun Oct 21 19:17:56 2018
+Sun Oct 21 20:24:57 2018
 
 PAR: Place And Route Diamond (64-bit) 3.10.2.115.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset D:/LatticeMico8Projects/lm8_tutor/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF platform1_platform1_map.ncd platform1_platform1.dir/5_1.ncd platform1_platform1.prf
@@ -189,21 +177,21 @@ License checked out.
 Ignore Preference Error(s):  True
 Device utilization summary:
 
-   PIO (prelim)   16+4(JTAG)/280     7% used
-                  16+4(JTAG)/105     19% bonded
+   PIO (prelim)   22+4(JTAG)/280     9% used
+                  22+4(JTAG)/105     25% bonded
 
-   SLICE            384/2160         17% used
+   SLICE            390/2160         18% used
 
    GSR                1/1           100% used
    EBR                6/10           60% used
 
 
 INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
-Number of Signals: 1132
-Number of Connections: 3459
+Number of Signals: 1140
+Number of Connections: 3504
 
 Pin Constraint Summary:
-   14 out of 16 pins locked (87% locked).
+   20 out of 22 pins locked (90% locked).
 
 The following 1 signal is selected to use the primary clock routing resources:
     clk_i_c (driver: clk_i, clk load #: 202)
@@ -211,23 +199,23 @@ The following 1 signal is selected to use the primary clock routing resources:
     <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="clk_i_c" arg1="Primary" arg2="clk_i" arg3="C1" arg4="Primary"  />
 
 The following 2 signals are selected to use the secondary clock routing resources:
-    lm8_inst/LM8/core_rst_n (driver: lm8_inst/LM8/SLICE_337, clk load #: 0, sr load #: 67, ce load #: 0)
-    lm8_inst/LM8/prom_enable (driver: lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_137, clk load #: 0, sr load #: 0, ce load #: 11)
+    lm8_inst/LM8/core_rst_n (driver: lm8_inst/LM8/SLICE_272, clk load #: 0, sr load #: 67, ce load #: 0)
+    lm8_inst/LM8/prom_enable (driver: lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_130, clk load #: 0, sr load #: 0, ce load #: 11)
 
 Signal counter_2 is selected as Global Set/Reset.
 .
 Starting Placer Phase 0.
 ............
-Finished Placer Phase 0.  REAL time: 2 secs 
+Finished Placer Phase 0.  REAL time: 0 secs 
 
 Starting Placer Phase 1.
-......................
-Placer score = 174435.
+.....................
+Placer score = 168103.
 Finished Placer Phase 1.  REAL time: 5 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  172749
+Placer score =  166510
 Finished Placer Phase 2.  REAL time: 5 secs 
 
 
@@ -242,8 +230,8 @@ Global Clock Resources:
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
   PRIMARY "clk_i_c" from comp "clk_i" on PIO site "C1 (PL4A)", clk load = 202
-  SECONDARY "lm8_inst/LM8/core_rst_n" from Q0 on comp "lm8_inst/LM8/SLICE_337" on site "R12C17D", clk load = 0, ce load = 0, sr load = 67
-  SECONDARY "lm8_inst/LM8/prom_enable" from F1 on comp "lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_137" on site "R12C17C", clk load = 0, ce load = 11, sr load = 0
+  SECONDARY "lm8_inst/LM8/core_rst_n" from Q0 on comp "lm8_inst/LM8/SLICE_272" on site "R12C15D", clk load = 0, ce load = 0, sr load = 67
+  SECONDARY "lm8_inst/LM8/prom_enable" from F1 on comp "lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_130" on site "R12C15A", clk load = 0, ce load = 11, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
   SECONDARY: 2 out of 8 (25%)
@@ -255,24 +243,24 @@ Edge Clocks:
 
 
 I/O Usage Summary (final):
-   16 + 4(JTAG) out of 280 (7.1%) PIO sites used.
-   16 + 4(JTAG) out of 105 (19.0%) bonded PIO sites used.
-   Number of PIO comps: 16; differential: 0.
+   22 + 4(JTAG) out of 280 (9.3%) PIO sites used.
+   22 + 4(JTAG) out of 105 (24.8%) bonded PIO sites used.
+   Number of PIO comps: 22; differential: 0.
    Number of Vref pins used: 0.
 
 I/O Bank Usage Summary:
 +----------+----------------+------------+-----------+
 | I/O Bank | Usage          | Bank Vccio | Bank Vref |
 +----------+----------------+------------+-----------+
-| 0        | 0 / 26 (  0%)  | -          | -         |
+| 0        | 1 / 26 (  3%)  | 2.5V       | -         |
 | 1        | 3 / 26 ( 11%)  | 3.3V       | -         |
-| 2        | 11 / 28 ( 39%) | 3.3V       | -         |
-| 3        | 1 / 7 ( 14%)   | 2.5V       | -         |
+| 2        | 16 / 28 ( 57%) | 3.3V       | -         |
+| 3        | 1 / 7 ( 14%)   | 3.3V       | -         |
 | 4        | 0 / 8 (  0%)   | -          | -         |
 | 5        | 1 / 10 ( 10%)  | 3.3V       | -         |
 +----------+----------------+------------+-----------+
 
-Total placer CPU time: 3 secs 
+Total placer CPU time: 4 secs 
 
 Dumping design to file platform1_platform1.dir/5_1.ncd.
 
@@ -281,12 +269,12 @@ Dumping design to file platform1_platform1.dir/5_1.ncd.
 INFO - par: ASE feature is off due to non timing-driven settings.  
 -----------------------------------------------------------------
 
-0 connections routed; 3459 unrouted.
+0 connections routed; 3504 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 6 secs 
+Completed router resource preassignment. Real time: 7 secs 
 
-Start NBR router at 19:18:02 10/21/18
+Start NBR router at 20:25:04 10/21/18
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -301,36 +289,32 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 19:18:02 10/21/18
+Start NBR special constraint process at 20:25:04 10/21/18
 
-Start NBR section for initial routing at 19:18:02 10/21/18
+Start NBR section for initial routing at 20:25:04 10/21/18
 Level 4, iteration 1
-113(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
+120(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 19:18:03 10/21/18
+Start NBR section for normal routing at 20:25:05 10/21/18
 Level 4, iteration 1
-49(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
+65(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
 Level 4, iteration 2
-19(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
+23(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
 Level 4, iteration 3
-5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
+9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
 Level 4, iteration 4
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
 Level 4, iteration 5
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
-Level 4, iteration 6
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
-Level 4, iteration 7
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
 
-Start NBR section for re-routing at 19:18:03 10/21/18
+Start NBR section for re-routing at 20:25:05 10/21/18
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
 
-Start NBR section for post-routing at 19:18:03 10/21/18
+Start NBR section for post-routing at 20:25:05 10/21/18
 
 End NBR router with 0 unrouted connection
 
@@ -345,10 +329,10 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 
-Total CPU time 5 secs 
-Total REAL time: 7 secs 
+Total CPU time 7 secs 
+Total REAL time: 9 secs 
 Completely routed.
-End of route.  3459 routed (100.00%); 0 unrouted.
+End of route.  3504 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -365,8 +349,8 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
 PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 6 secs 
-Total REAL time to completion: 8 secs 
+Total CPU  time to completion: 8 secs 
+Total REAL time to completion: 9 secs 
 
 par done!
 
