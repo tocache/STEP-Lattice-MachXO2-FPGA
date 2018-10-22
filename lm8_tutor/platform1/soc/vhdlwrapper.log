@@ -1,0 +1,44 @@
+Program: D:\lscc\diamond\3.10_x64\micosystem\utilities\tclscript\vhdlwrapper.tcl
+Number of arguments: 9
+Argument: 0: D:\LatticeMico8Projects\lm8_tutor\platform1\soc
+Argument: 1: platform1
+Argument: 2: nongo
+Argument: 3: 2.1
+Argument: 4: D:\lscc\diamond\3.10_x64
+Argument: 5: D:\lscc\diamond\3.10_x64\bin\nt64
+Argument: 6: D:\lscc\diamond\3.10_x64\ispfpga\bin\nt64
+Argument: 7: D:\lscc\diamond\3.10_x64\tcltk\lib
+Argument: 8: true
+
+install_dir: D:/lscc/diamond/3.10_x64
+cpld_bin: D:/lscc/diamond/3.10_x64/bin/nt64
+fpga_bin: D:/lscc/diamond/3.10_x64/ispfpga/bin/nt64
+fpga_dir: D:/lscc/diamond/3.10_x64/ispfpga
+tcl_lib: D:/lscc/diamond/3.10_x64/tcltk/lib
+bali_app: true
+
+Verilog Filename: D:/LatticeMico8Projects/lm8_tutor/platform1/soc/platform1.v
+VHDL Filename: D:/LatticeMico8Projects/lm8_tutor/platform1/soc/platform1_vhd.vhd
+MSB Filename: D:/LatticeMico8Projects/lm8_tutor/platform1/soc/platform1.msb
+
+open D:/LatticeMico8Projects/lm8_tutor/platform1/soc/platform1.msb
+tech: MachXO2
+cpu: LM8
+comp: lm8
+comp: gpio
+comp: uart_core
+comp: gpio
+close D:/LatticeMico8Projects/lm8_tutor/platform1/soc/platform1.msb
+
+open D:/LatticeMico8Projects/lm8_tutor/platform1/soc/platform1.v
+
+
+list top module port type width bus
+LEDPIO_OUT out 8-1 1
+uartSIN in 1 0
+uartSOUT out 1 0
+DIPSWPIO_IN in 4-1 1
+open D:/LatticeMico8Projects/lm8_tutor/platform1/soc/platform1_vhd.vhd
+close D:/LatticeMico8Projects/lm8_tutor/platform1/soc/platform1_vhd.vhd
+
+Tech: MachXO2

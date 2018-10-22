@@ -1,0 +1,278 @@
+----------------------------------------------------------------------
+Report for cell platform1_vhd.TECH
+Register bits:  264 of 4635 (5.696%)
+I/O cells:      16
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        38          100.0
+                            FD1P3AX        72          100.0
+                            FD1P3AY        17          100.0
+                            FD1P3BX         9          100.0
+                            FD1P3DX        36          100.0
+                            FD1P3IX        31          100.0
+                            FD1S3AX        43          100.0
+                            FD1S3AY         9          100.0
+                            FD1S3BX         2          100.0
+                            FD1S3DX        40          100.0
+                            FD1S3IX         5          100.0
+                                GSR         1          100.0
+                                 IB         7          100.0
+                               LUT4       549          100.0
+                                 OB         9          100.0
+                              PFUMX        44          100.0
+                        VERIFIC_GND         6          100.0
+              pmi_addsubMo884942741         1          100.0
+pmi_distributed_dpramMbnonen853292a5343         2          100.0
+pmi_distributed_spramMbnonen1341693c3d10         1          100.0
+pmi_ram_dqMnhprom_initsadn18112048f3df93e         1          100.0
+pmi_ram_dqMnhscratchpad_initsadn8112048f9ce2e6         1          100.0
+SUB MODULES
+arbiter2(MAX_DAT_WIDTH=8,WBS_DAT_WIDTH=8,WBM0_DAT_WIDTH=8,WBM1_DAT_WIDTH=8)         1
+gpio(GPIO_WB_DAT_WIDTH=8,DATA_WIDTH=32'b0100,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1)         1
+gpio(GPIO_WB_DAT_WIDTH=8,DATA_WIDTH=32'b01000,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1)         1
+             intface(CLK_IN_MHZ=12)         1
+     lm8_alu(FAMILY_NAME="MachXO2")         1
+lm8_core(FAMILY_NAME="MachXO2",EXT_AW=16,PROM_AW=32'sb01011,PROM_AD=2048,REGISTERS_16=0,PGM_STACK_AW=32'sb0100)         1
+lm8_flow_cntl(PGM_STACK_AW=32'sb0100,PROM_AW=32'sb01011,FAMILY_NAME="MachXO2")         1
+       lm8_idec(PROM_AW=32'sb01011)         1
+        lm8_interrupt(INTERRUPTS=8)         1
+                        lm8_io_cntl         1
+ lm8_renamed_due_excessive_length_1         1
+                          platform1         1
+                             rxcver         1
+                             txmitt         1
+           uart_core(CLK_IN_MHZ=12)         1
+                              TOTAL       939
+----------------------------------------------------------------------
+Report for cell platform1.v1
+Instance Path : lm8_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        38          100.0
+                            FD1P3AX        72          100.0
+                            FD1P3AY        17          100.0
+                            FD1P3BX         9          100.0
+                            FD1P3DX        36          100.0
+                            FD1P3IX        31          100.0
+                            FD1S3AX        43          100.0
+                            FD1S3AY         9          100.0
+                            FD1S3BX         2          100.0
+                            FD1S3DX        40          100.0
+                            FD1S3IX         5          100.0
+                               LUT4       548           99.8
+                              PFUMX        44          100.0
+                        VERIFIC_GND         5           83.3
+              pmi_addsubMo884942741         1          100.0
+pmi_distributed_dpramMbnonen853292a5343         2          100.0
+pmi_distributed_spramMbnonen1341693c3d10         1          100.0
+pmi_ram_dqMnhprom_initsadn18112048f3df93e         1          100.0
+pmi_ram_dqMnhscratchpad_initsadn8112048f9ce2e6         1          100.0
+SUB MODULES
+arbiter2(MAX_DAT_WIDTH=8,WBS_DAT_WIDTH=8,WBM0_DAT_WIDTH=8,WBM1_DAT_WIDTH=8)         1
+gpio(GPIO_WB_DAT_WIDTH=8,DATA_WIDTH=32'b0100,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1)         1
+gpio(GPIO_WB_DAT_WIDTH=8,DATA_WIDTH=32'b01000,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1)         1
+             intface(CLK_IN_MHZ=12)         1
+     lm8_alu(FAMILY_NAME="MachXO2")         1
+lm8_core(FAMILY_NAME="MachXO2",EXT_AW=16,PROM_AW=32'sb01011,PROM_AD=2048,REGISTERS_16=0,PGM_STACK_AW=32'sb0100)         1
+lm8_flow_cntl(PGM_STACK_AW=32'sb0100,PROM_AW=32'sb01011,FAMILY_NAME="MachXO2")         1
+       lm8_idec(PROM_AW=32'sb01011)         1
+        lm8_interrupt(INTERRUPTS=8)         1
+                        lm8_io_cntl         1
+ lm8_renamed_due_excessive_length_1         1
+                             rxcver         1
+                             txmitt         1
+           uart_core(CLK_IN_MHZ=12)         1
+                              TOTAL       919
+----------------------------------------------------------------------
+Report for cell arbiter2(MAX_DAT_WIDTH=8,WBS_DAT_WIDTH=8,WBM0_DAT_WIDTH=8,WBM1_DAT_WIDTH=8).v1
+Instance Path : lm8_inst.arbiter
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1            2.3
+                               LUT4        30            5.5
+                              TOTAL        31
+----------------------------------------------------------------------
+Report for cell uart_core(CLK_IN_MHZ=12).v1
+Instance Path : lm8_inst.LM8interrupts_0__I_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        32           84.2
+                            FD1P3AX        60           83.3
+                            FD1P3AY        17          100.0
+                            FD1P3IX        23           74.2
+                            FD1S3AX        37           86.0
+                            FD1S3AY         9          100.0
+                            FD1S3IX         2           40.0
+                               LUT4       218           39.7
+                              PFUMX        16           36.4
+                        VERIFIC_GND         2           33.3
+SUB MODULES
+             intface(CLK_IN_MHZ=12)         1
+                             rxcver         1
+                             txmitt         1
+                              TOTAL       419
+----------------------------------------------------------------------
+Report for cell txmitt.v1
+Instance Path : lm8_inst.LM8interrupts_0__I_0.u_txmitt
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         9           23.7
+                            FD1P3AX        24           33.3
+                            FD1P3AY         2           11.8
+                            FD1P3IX         3            9.7
+                            FD1S3AX        10           23.3
+                            FD1S3AY         4           44.4
+                               LUT4        77           14.0
+                              PFUMX        12           27.3
+                        VERIFIC_GND         1           16.7
+                              TOTAL       142
+----------------------------------------------------------------------
+Report for cell rxcver.v1
+Instance Path : lm8_inst.LM8interrupts_0__I_0.u_rxcver
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        23           60.5
+                            FD1P3AX         8           11.1
+                            FD1P3AY         1            5.9
+                            FD1P3IX        19           61.3
+                            FD1S3AX        24           55.8
+                            FD1S3AY         4           44.4
+                               LUT4       101           18.4
+                        VERIFIC_GND         1           16.7
+                              TOTAL       181
+----------------------------------------------------------------------
+Report for cell intface(CLK_IN_MHZ=12).v1
+Instance Path : lm8_inst.LM8interrupts_0__I_0.u_intface
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        28           38.9
+                            FD1P3AY        14           82.4
+                            FD1P3IX         1            3.2
+                            FD1S3AX         3            7.0
+                            FD1S3AY         1           11.1
+                            FD1S3IX         2           40.0
+                               LUT4        40            7.3
+                              PFUMX         4            9.1
+                              TOTAL        93
+----------------------------------------------------------------------
+Report for cell lm8_renamed_due_excessive_length_1.v1
+Instance Path : lm8_inst.LM8
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         6           15.8
+                            FD1P3BX         9          100.0
+                            FD1P3DX        33           91.7
+                            FD1P3IX         8           25.8
+                            FD1S3AX         3            7.0
+                            FD1S3BX         2          100.0
+                            FD1S3DX        40          100.0
+                            FD1S3IX         3           60.0
+                               LUT4       255           46.4
+                              PFUMX        28           63.6
+                        VERIFIC_GND         3           50.0
+              pmi_addsubMo884942741         1          100.0
+pmi_distributed_dpramMbnonen853292a5343         2          100.0
+pmi_distributed_spramMbnonen1341693c3d10         1          100.0
+pmi_ram_dqMnhprom_initsadn18112048f3df93e         1          100.0
+pmi_ram_dqMnhscratchpad_initsadn8112048f9ce2e6         1          100.0
+SUB MODULES
+     lm8_alu(FAMILY_NAME="MachXO2")         1
+lm8_core(FAMILY_NAME="MachXO2",EXT_AW=16,PROM_AW=32'sb01011,PROM_AD=2048,REGISTERS_16=0,PGM_STACK_AW=32'sb0100)         1
+lm8_flow_cntl(PGM_STACK_AW=32'sb0100,PROM_AW=32'sb01011,FAMILY_NAME="MachXO2")         1
+       lm8_idec(PROM_AW=32'sb01011)         1
+        lm8_interrupt(INTERRUPTS=8)         1
+                        lm8_io_cntl         1
+                              TOTAL       402
+----------------------------------------------------------------------
+Report for cell lm8_core(FAMILY_NAME="MachXO2",EXT_AW=16,PROM_AW=32'sb01011,PROM_AD=2048,REGISTERS_16=0,PGM_STACK_AW=32'sb0100).v1
+Instance Path : lm8_inst.LM8.u1_isp8_core
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         6           15.8
+                            FD1P3BX         9          100.0
+                            FD1P3DX        31           86.1
+                            FD1S3AX         1            2.3
+                            FD1S3BX         2          100.0
+                            FD1S3DX        40          100.0
+                            FD1S3IX         1           20.0
+                               LUT4       148           27.0
+                              PFUMX        27           61.4
+                        VERIFIC_GND         2           33.3
+              pmi_addsubMo884942741         1          100.0
+pmi_distributed_dpramMbnonen853292a5343         2          100.0
+pmi_distributed_spramMbnonen1341693c3d10         1          100.0
+SUB MODULES
+     lm8_alu(FAMILY_NAME="MachXO2")         1
+lm8_flow_cntl(PGM_STACK_AW=32'sb0100,PROM_AW=32'sb01011,FAMILY_NAME="MachXO2")         1
+       lm8_idec(PROM_AW=32'sb01011)         1
+        lm8_interrupt(INTERRUPTS=8)         1
+                        lm8_io_cntl         1
+                              TOTAL       276
+----------------------------------------------------------------------
+Report for cell lm8_interrupt(INTERRUPTS=8).v1
+Instance Path : lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3BX         8           88.9
+                            FD1P3DX         1            2.8
+                            FD1S3DX         1            2.5
+                               LUT4         2            0.4
+                              TOTAL        12
+----------------------------------------------------------------------
+Report for cell lm8_idec(PROM_AW=32'sb01011).v1
+Instance Path : lm8_inst.LM8.u1_isp8_core.u1_lm8_idec
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        29            5.3
+                              TOTAL        29
+----------------------------------------------------------------------
+Report for cell lm8_flow_cntl(PGM_STACK_AW=32'sb0100,PROM_AW=32'sb01011,FAMILY_NAME="MachXO2").v1
+Instance Path : lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         6           15.8
+                            FD1P3BX         1           11.1
+                            FD1P3DX        22           61.1
+                            FD1S3AX         1            2.3
+                            FD1S3BX         2          100.0
+                            FD1S3DX         9           22.5
+                            FD1S3IX         1           20.0
+                               LUT4        50            9.1
+                              PFUMX         2            4.5
+                        VERIFIC_GND         1           16.7
+pmi_distributed_spramMbnonen1341693c3d10         1          100.0
+                              TOTAL        96
+----------------------------------------------------------------------
+Report for cell lm8_io_cntl.v1
+Instance Path : lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3DX        20           50.0
+                               LUT4         6            1.1
+                              TOTAL        26
+----------------------------------------------------------------------
+Report for cell lm8_alu(FAMILY_NAME="MachXO2").v1
+Instance Path : lm8_inst.LM8.u1_isp8_core.u1_lm8_alu
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        36            6.6
+                              PFUMX        17           38.6
+              pmi_addsubMo884942741         1          100.0
+                              TOTAL        54
+----------------------------------------------------------------------
+Report for cell gpio(GPIO_WB_DAT_WIDTH=8,DATA_WIDTH=32'b01000,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1).v1
+Instance Path : lm8_inst.LEDGPIO_DAT_O_7__I_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         8           11.1
+                            FD1S3AX         1            2.3
+                              TOTAL         9
+----------------------------------------------------------------------
+Report for cell gpio(GPIO_WB_DAT_WIDTH=8,DATA_WIDTH=32'b0100,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1).v1
+Instance Path : lm8_inst.DIPSWGPIO_DAT_O_7__I_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         4            5.6
+                            FD1S3AX         1            2.3
+                               LUT4         4            0.7
+                              TOTAL         9

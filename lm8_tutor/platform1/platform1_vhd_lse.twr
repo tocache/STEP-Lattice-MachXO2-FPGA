@@ -1,0 +1,276 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sun Oct 21 19:17:50 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     platform1_vhd
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_i_c]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 19.410ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \lm8_inst/LM8/genblk1.first_fetch_59_rep_207  (from clk_i_c +)
+   Destination:    FD1S3BX    D              \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/ext_addr_cyc_153  (to clk_i_c +)
+
+   Delay:                  24.250ns  (27.2% logic, 72.8% route), 14 logic levels.
+
+ Constraint Details:
+
+     24.250ns data_path \lm8_inst/LM8/genblk1.first_fetch_59_rep_207 to \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/ext_addr_cyc_153 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 19.410ns
+
+ Path Details: \lm8_inst/LM8/genblk1.first_fetch_59_rep_207 to \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/ext_addr_cyc_153
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \lm8_inst/LM8/genblk1.first_fetch_59_rep_207 (from clk_i_c)
+Route        16   e 1.873                                  \lm8_inst/LM8/n7385
+LUT4        ---     0.493              B to Z              \lm8_inst/LM8/i1_2_lut_rep_167_3_lut_3_lut
+Route         9   e 1.574                                  \lm8_inst/LM8/n6956
+LUT4        ---     0.493              D to Z              \lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/i175_2_lut_3_lut_4_lut
+Route         2   e 1.141                                  \lm8_inst/n165
+LUT4        ---     0.493              A to Z              \lm8_inst/LM8/i5820_4_lut_rep_144
+Route        13   e 1.803                                  \lm8_inst/LM8/n6933
+LUT4        ---     0.493              A to Z              \lm8_inst/LM8/ext_cyc_I_16_3_lut_rep_135_4_lut_4_lut
+Route         9   e 1.574                                  \lm8_inst/LM8/n6924
+LUT4        ---     0.493              A to Z              \lm8_inst/LM8/i3284_2_lut_rep_133_3_lut
+Route        18   e 1.822                                  \lm8_inst/n6922
+LUT4        ---     0.493              A to Z              \lm8_inst/i3_4_lut_adj_150
+Route         5   e 1.405                                  \lm8_inst/n19_adj_1573
+LUT4        ---     0.493              C to Z              \lm8_inst/arbiter/i5673_2_lut_3_lut_4_lut
+Route         1   e 0.941                                  \lm8_inst/n6404
+LUT4        ---     0.493              B to Z              \lm8_inst/i3_4_lut
+Route         1   e 0.941                                  \lm8_inst/n5590
+LUT4        ---     0.493              D to Z              \lm8_inst/mux_22_i1_4_lut
+Route         2   e 1.141                                  \lm8_inst/SHAREDBUS_ACK_O_N_79[0]
+LUT4        ---     0.493              B to Z              \lm8_inst/mux_6_i1_3_lut_rep_116
+Route         4   e 1.340                                  \lm8_inst/n6905
+LUT4        ---     0.493              A to Z              \lm8_inst/arbiter/external_sp_bdd_2_lut_3_lut
+Route         1   e 0.020                                  \lm8_inst/n6856
+MUXL5       ---     0.233           ALUT to Z              \lm8_inst/LM8/i5942
+Route         2   e 1.141                                  \lm8_inst/LM8/ext_mem_ready
+LUT4        ---     0.493              C to Z              \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/i1_4_lut_adj_98
+Route         1   e 0.941                                  \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/ext_addr_cyc_nxt
+                  --------
+                   24.250  (27.2% logic, 72.8% route), 14 logic levels.
+
+
+Error:  The following path violates requirements by 19.410ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \lm8_inst/LM8/genblk1.first_fetch_59_rep_207  (from clk_i_c +)
+   Destination:    FD1S3DX    D              \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/data_cyc_154  (to clk_i_c +)
+
+   Delay:                  24.250ns  (27.2% logic, 72.8% route), 14 logic levels.
+
+ Constraint Details:
+
+     24.250ns data_path \lm8_inst/LM8/genblk1.first_fetch_59_rep_207 to \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/data_cyc_154 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 19.410ns
+
+ Path Details: \lm8_inst/LM8/genblk1.first_fetch_59_rep_207 to \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/data_cyc_154
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \lm8_inst/LM8/genblk1.first_fetch_59_rep_207 (from clk_i_c)
+Route        16   e 1.873                                  \lm8_inst/LM8/n7385
+LUT4        ---     0.493              B to Z              \lm8_inst/LM8/i1_2_lut_rep_167_3_lut_3_lut
+Route         9   e 1.574                                  \lm8_inst/LM8/n6956
+LUT4        ---     0.493              D to Z              \lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/i175_2_lut_3_lut_4_lut
+Route         2   e 1.141                                  \lm8_inst/n165
+LUT4        ---     0.493              A to Z              \lm8_inst/LM8/i5820_4_lut_rep_144
+Route        13   e 1.803                                  \lm8_inst/LM8/n6933
+LUT4        ---     0.493              A to Z              \lm8_inst/LM8/ext_cyc_I_16_3_lut_rep_135_4_lut_4_lut
+Route         9   e 1.574                                  \lm8_inst/LM8/n6924
+LUT4        ---     0.493              A to Z              \lm8_inst/LM8/i3284_2_lut_rep_133_3_lut
+Route        18   e 1.822                                  \lm8_inst/n6922
+LUT4        ---     0.493              A to Z              \lm8_inst/i3_4_lut_adj_150
+Route         5   e 1.405                                  \lm8_inst/n19_adj_1573
+LUT4        ---     0.493              C to Z              \lm8_inst/arbiter/i5673_2_lut_3_lut_4_lut
+Route         1   e 0.941                                  \lm8_inst/n6404
+LUT4        ---     0.493              B to Z              \lm8_inst/i3_4_lut
+Route         1   e 0.941                                  \lm8_inst/n5590
+LUT4        ---     0.493              D to Z              \lm8_inst/mux_22_i1_4_lut
+Route         2   e 1.141                                  \lm8_inst/SHAREDBUS_ACK_O_N_79[0]
+LUT4        ---     0.493              B to Z              \lm8_inst/mux_6_i1_3_lut_rep_116
+Route         4   e 1.340                                  \lm8_inst/n6905
+LUT4        ---     0.493              A to Z              \lm8_inst/arbiter/external_sp_bdd_2_lut_3_lut
+Route         1   e 0.020                                  \lm8_inst/n6856
+MUXL5       ---     0.233           ALUT to Z              \lm8_inst/LM8/i5942
+Route         2   e 1.141                                  \lm8_inst/LM8/ext_mem_ready
+LUT4        ---     0.493              B to Z              \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/i11_4_lut
+Route         1   e 0.941                                  \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/data_cyc_nxt
+                  --------
+                   24.250  (27.2% logic, 72.8% route), 14 logic levels.
+
+
+Error:  The following path violates requirements by 19.338ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \lm8_inst/LM8/genblk1.first_fetch_59_rep_207  (from clk_i_c +)
+   Destination:    FD1S3BX    D              \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/ext_addr_cyc_153  (to clk_i_c +)
+
+   Delay:                  24.178ns  (27.3% logic, 72.7% route), 14 logic levels.
+
+ Constraint Details:
+
+     24.178ns data_path \lm8_inst/LM8/genblk1.first_fetch_59_rep_207 to \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/ext_addr_cyc_153 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 19.338ns
+
+ Path Details: \lm8_inst/LM8/genblk1.first_fetch_59_rep_207 to \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/ext_addr_cyc_153
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \lm8_inst/LM8/genblk1.first_fetch_59_rep_207 (from clk_i_c)
+Route        16   e 1.873                                  \lm8_inst/LM8/n7385
+LUT4        ---     0.493              B to Z              \lm8_inst/LM8/i3317_2_lut_rep_192
+Route         7   e 1.502                                  \lm8_inst/LM8/n6981
+LUT4        ---     0.493              B to Z              \lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/i175_2_lut_3_lut_4_lut
+Route         2   e 1.141                                  \lm8_inst/n165
+LUT4        ---     0.493              A to Z              \lm8_inst/LM8/i5820_4_lut_rep_144
+Route        13   e 1.803                                  \lm8_inst/LM8/n6933
+LUT4        ---     0.493              A to Z              \lm8_inst/LM8/ext_cyc_I_16_3_lut_rep_135_4_lut_4_lut
+Route         9   e 1.574                                  \lm8_inst/LM8/n6924
+LUT4        ---     0.493              A to Z              \lm8_inst/LM8/i3284_2_lut_rep_133_3_lut
+Route        18   e 1.822                                  \lm8_inst/n6922
+LUT4        ---     0.493              A to Z              \lm8_inst/i3_4_lut_adj_150
+Route         5   e 1.405                                  \lm8_inst/n19_adj_1573
+LUT4        ---     0.493              C to Z              \lm8_inst/arbiter/i5673_2_lut_3_lut_4_lut
+Route         1   e 0.941                                  \lm8_inst/n6404
+LUT4        ---     0.493              B to Z              \lm8_inst/i3_4_lut
+Route         1   e 0.941                                  \lm8_inst/n5590
+LUT4        ---     0.493              D to Z              \lm8_inst/mux_22_i1_4_lut
+Route         2   e 1.141                                  \lm8_inst/SHAREDBUS_ACK_O_N_79[0]
+LUT4        ---     0.493              B to Z              \lm8_inst/mux_6_i1_3_lut_rep_116
+Route         4   e 1.340                                  \lm8_inst/n6905
+LUT4        ---     0.493              A to Z              \lm8_inst/arbiter/external_sp_bdd_2_lut_3_lut
+Route         1   e 0.020                                  \lm8_inst/n6856
+MUXL5       ---     0.233           ALUT to Z              \lm8_inst/LM8/i5942
+Route         2   e 1.141                                  \lm8_inst/LM8/ext_mem_ready
+LUT4        ---     0.493              C to Z              \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/i1_4_lut_adj_98
+Route         1   e 0.941                                  \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/ext_addr_cyc_nxt
+                  --------
+                   24.178  (27.3% logic, 72.7% route), 14 logic levels.
+
+Warning: 24.410 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_i_c]                 |     5.000 ns|    24.410 ns|    14 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\lm8_inst/LM8/n6924                     |       9|    2643|     64.53%
+                                        |        |        |
+\lm8_inst/n6922                         |      18|    2555|     62.38%
+                                        |        |        |
+\lm8_inst/LM8/n6933                     |      13|    2331|     56.91%
+                                        |        |        |
+\lm8_inst/n19_adj_1573                  |       5|    2031|     49.58%
+                                        |        |        |
+\lm8_inst/LM8/n7385                     |      16|    1526|     37.26%
+                                        |        |        |
+\lm8_inst/n165                          |       2|    1388|     33.89%
+                                        |        |        |
+\lm8_inst/n6915                         |      15|    1327|     32.40%
+                                        |        |        |
+\lm8_inst/n6905                         |       4|    1103|     26.93%
+                                        |        |        |
+\lm8_inst/SHAREDBUS_ACK_O_N_79[0]       |       2|    1090|     26.61%
+                                        |        |        |
+\lm8_inst/LM8/clk_i_c_enable_99         |       8|     752|     18.36%
+                                        |        |        |
+\lm8_inst/LM8interrupts_0__I_0/u_rxcver/|        |        |
+n30                                     |       1|     715|     17.46%
+                                        |        |        |
+\lm8_inst/LM8interrupts_0__I_0/u_rxcver/|        |        |
+n45                                     |      36|     715|     17.46%
+                                        |        |        |
+\lm8_inst/n5590                         |       1|     605|     14.77%
+                                        |        |        |
+\lm8_inst/n25                           |      13|     600|     14.65%
+                                        |        |        |
+\lm8_inst/LM8interrupts_0__I_0/u_rxcver/|        |        |
+n5498                                   |       1|     574|     14.01%
+                                        |        |        |
+\lm8_inst/n27                           |       1|     573|     13.99%
+                                        |        |        |
+\lm8_inst/LM8interrupts_0__I_0/u_rxcver/|        |        |
+n5491                                   |       1|     552|     13.48%
+                                        |        |        |
+\lm8_inst/LM8interrupts_0__I_0/u_rxcver/|        |        |
+n5490                                   |       1|     547|     13.35%
+                                        |        |        |
+\lm8_inst/n2946                         |       3|     534|     13.04%
+                                        |        |        |
+\lm8_inst/n6372                         |       3|     534|     13.04%
+                                        |        |        |
+\lm8_inst/LM8/n6956                     |       9|     520|     12.70%
+                                        |        |        |
+\lm8_inst/LM8interrupts_0__I_0/u_rxcver/|        |        |
+n5499                                   |       1|     517|     12.62%
+                                        |        |        |
+\lm8_inst/n6                            |       2|     486|     11.87%
+                                        |        |        |
+\lm8_inst/n6404                         |       1|     484|     11.82%
+                                        |        |        |
+\lm8_inst/LM8interrupts_0__I_0/u_rxcver/|        |        |
+n28                                     |       1|     476|     11.62%
+                                        |        |        |
+\lm8_inst/LM8/n6981                     |       7|     467|     11.40%
+                                        |        |        |
+\lm8_inst/LM8interrupts_0__I_0/u_rxcver/|        |        |
+n5497                                   |       1|     463|     11.30%
+                                        |        |        |
+\lm8_inst/LM8/ext_mem_ready             |       2|     460|     11.23%
+                                        |        |        |
+\lm8_inst/n93                           |       2|     457|     11.16%
+                                        |        |        |
+\lm8_inst/LM8interrupts_0__I_0/u_rxcver/|        |        |
+n5489                                   |       1|     419|     10.23%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 4096  Score: 51864719
+
+Constraints cover  51117 paths, 919 nets, and 2648 connections (97.3% coverage)
+
+
+Peak memory: 98697216 bytes, TRCE: 9023488 bytes, DLYMAN: 163840 bytes
+CPU_TIME_REPORT: 0 secs 

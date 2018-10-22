@@ -1,0 +1,445 @@
+synthesis:  version Diamond (64-bit) 3.10.2.115
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Oct 21 19:25:43 2018
+
+
+Command Line:  synthesis -f platform1_platform1_lattice.synproj -gui -msgset D:/LatticeMico8Projects/lm8_tutor/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = platform1_vhd.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/LatticeMico8Projects/lm8_tutor (searchpath added)
+-p D:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
+-p D:/LatticeMico8Projects/lm8_tutor/platform1 (searchpath added)
+-p D:/LatticeMico8Projects/lm8_tutor (searchpath added)
+Mixed language design
+Verilog design file = D:/LatticeMico8Projects/lm8_tutor/platform1/soc/platform1_top.v
+VHDL library = work
+VHDL design file = D:/LatticeMico8Projects/lm8_tutor/platform1/soc/platform1_vhd.vhd
+NGD file = platform1_platform1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file D:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/latticemico8projects/lm8_tutor/platform1/soc/platform1_top.v. VERI-1482
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/platform1_top.v(1): analyzing included file d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(46): analyzing included file d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/system_conf.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(327): analyzing included file d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(48): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/pmi_def.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(50): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/system_conf.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(51): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_include.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(52): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v. VERI-1328
+INFO - synthesis: D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v(47): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/system_conf.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(53): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_io_cntl.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(54): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(55): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_idec.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(56): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_alu.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(57): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v. VERI-1328
+WARNING - synthesis: D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(82): parameter declaration becomes local in lm8_core with formal parameter declaration list. VERI-1199
+WARNING - synthesis: D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(83): parameter declaration becomes local in lm8_core with formal parameter declaration list. VERI-1199
+WARNING - synthesis: D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(84): parameter declaration becomes local in lm8_core with formal parameter declaration list. VERI-1199
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(58): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v. VERI-1328
+WARNING - synthesis: D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(113): parameter declaration becomes local in lm8 with formal parameter declaration list. VERI-1199
+WARNING - synthesis: D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(114): parameter declaration becomes local in lm8 with formal parameter declaration list. VERI-1199
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(328): analyzing included file d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(79): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/system_conf.v. VERI-1328
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(176): parameter declaration becomes local in gpio with formal parameter declaration list. VERI-1199
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(329): analyzing included file d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(65): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/system_conf.v. VERI-1328
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(87): parameter declaration becomes local in tpio with formal parameter declaration list. VERI-1199
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(330): analyzing included file d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v(124): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/system_conf.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v(125): analyzing included file d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(319): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/system_conf.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(320): analyzing included file d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txcver_fifo.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txcver_fifo.v(51): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/system_conf.v. VERI-1328
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(510): parameter declaration becomes local in intface with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(511): parameter declaration becomes local in intface with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(512): parameter declaration becomes local in intface with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(513): parameter declaration becomes local in intface with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(514): parameter declaration becomes local in intface with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(515): parameter declaration becomes local in intface with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(516): parameter declaration becomes local in intface with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(819): parameter declaration becomes local in intface with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(820): parameter declaration becomes local in intface with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(821): parameter declaration becomes local in intface with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(822): parameter declaration becomes local in intface with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(823): parameter declaration becomes local in intface with formal parameter declaration list. VERI-1199
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v(126): analyzing included file d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(92): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/system_conf.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(93): analyzing included file d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver_fifo.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver_fifo.v(52): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/system_conf.v. VERI-1328
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(172): parameter declaration becomes local in rxcver with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(173): parameter declaration becomes local in rxcver with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(174): parameter declaration becomes local in rxcver with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(175): parameter declaration becomes local in rxcver with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(176): parameter declaration becomes local in rxcver with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(179): parameter declaration becomes local in rxcver with formal parameter declaration list. VERI-1199
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v(127): analyzing included file d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v. VERI-1328
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(102): analyzing included file D:/LatticeMico8Projects/lm8_tutor/platform1/soc/system_conf.v. VERI-1328
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(164): parameter declaration becomes local in txmitt with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(165): parameter declaration becomes local in txmitt with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(166): parameter declaration becomes local in txmitt with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(167): parameter declaration becomes local in txmitt with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(168): parameter declaration becomes local in txmitt with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(169): parameter declaration becomes local in txmitt with formal parameter declaration list. VERI-1199
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(170): parameter declaration becomes local in txmitt with formal parameter declaration list. VERI-1199
+Analyzing VHDL file d:/latticemico8projects/lm8_tutor/platform1/soc/platform1_vhd.vhd. VHDL-1481
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/platform1_vhd.vhd(4): analyzing entity platform1_vhd. VHDL-1012
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/platform1_vhd.vhd(15): analyzing architecture platform1_vhd_a. VHDL-1010
+unit platform1_vhd is not yet analyzed. VHDL-1485
+INFO - synthesis: The default VHDL library search path is now "D:/LatticeMico8Projects/lm8_tutor/platform1". VHDL-1504
+Top module language type = VHDL.
+unit platform1_vhd is not yet analyzed. VHDL-1485
+d:/latticemico8projects/lm8_tutor/platform1/soc/platform1_vhd.vhd(4): executing platform1_vhd(platform1_vhd_a)
+
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/platform1_vhd.vhd(38): going to verilog side to elaborate module platform1. VHDL-1399
+INFO - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/platform1_vhd.vhd(38): back to VHDL to continue elaboration. VHDL-1400
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/platform1_vhd.vhd(13): replacing existing netlist platform1_vhd(platform1_vhd_a). VHDL-1205
+Top module name (VHDL, mixed language): platform1_vhd
+Loading NGL library 'D:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: D:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = platform1_vhd.
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(589): input port PIO_IN[7] is not connected on this instance. VDB-1013
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(670): input port PIO_BOTH_IN[0] is not connected on this instance. VDB-1013
+WARNING - synthesis: D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(214): net sp_waddr[10] does not have a driver. VDB-1002
+WARNING - synthesis: D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(215): net sp_wdata[7] does not have a driver. VDB-1002
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(109): net IRQ_MASK does not have a driver. VDB-1002
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(159): net thr_rd_int does not have a driver. VDB-1002
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(160): net thr_rd_delay does not have a driver. VDB-1002
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(167): net IRQ_MASK[3] does not have a driver. VDB-1002
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(171): net EDGE_CAPTURE[3] does not have a driver. VDB-1002
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(359): net \lm8_inst/LM8I_ADR_O[31] does not have a driver. VDB-1002
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(360): net \lm8_inst/LM8I_DAT_O[7] does not have a driver. VDB-1002
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(363): net \lm8_inst/LM8I_WE_O does not have a driver. VDB-1002
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(367): net \lm8_inst/LM8I_CTI_O[2] does not have a driver. VDB-1002
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(369): net \lm8_inst/LM8I_LOCK_O does not have a driver. VDB-1002
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(370): net \lm8_inst/LM8I_CYC_O does not have a driver. VDB-1002
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(371): net \lm8_inst/LM8I_STB_O does not have a driver. VDB-1002
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[31]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[30]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[29]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[28]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[27]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[26]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[25]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[24]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[23]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[22]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[21]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[20]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[19]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[18]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[17]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[16]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[15]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[14]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[13]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[12]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[11]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[10]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[9]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[8]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[7]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[6]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[5]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[4]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[3]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[2]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[1]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_ADR_O[0]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_DAT_O[7]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_DAT_O[6]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_DAT_O[5]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_DAT_O[4]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_DAT_O[3]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_DAT_O[2]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_DAT_O[1]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_DAT_O[0]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_WE_O. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_CTI_O[2]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_CTI_O[1]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_CTI_O[0]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_LOCK_O. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_CYC_O. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8I_STB_O. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_waddr[10]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_waddr[9]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_waddr[8]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_waddr[7]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_waddr[6]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_waddr[5]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_waddr[4]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_waddr[3]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_waddr[2]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_waddr[1]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_waddr[0]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_wdata[7]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_wdata[6]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_wdata[5]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_wdata[4]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_wdata[3]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_wdata[2]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_wdata[1]. Patching with GND.
+######## Missing driver on net \lm8_inst/LM8/sp_wdata[0]. Patching with GND.
+######## Missing driver on net \lm8_inst/DIPSWGPIO_DAT_O_7__I_0/IRQ_MASK[3]. Patching with GND.
+######## Missing driver on net \lm8_inst/DIPSWGPIO_DAT_O_7__I_0/IRQ_MASK[2]. Patching with GND.
+######## Missing driver on net \lm8_inst/DIPSWGPIO_DAT_O_7__I_0/IRQ_MASK[1]. Patching with GND.
+######## Missing driver on net \lm8_inst/DIPSWGPIO_DAT_O_7__I_0/IRQ_MASK[0]. Patching with GND.
+######## Missing driver on net \lm8_inst/DIPSWGPIO_DAT_O_7__I_0/EDGE_CAPTURE[3]. Patching with GND.
+######## Missing driver on net \lm8_inst/DIPSWGPIO_DAT_O_7__I_0/EDGE_CAPTURE[2]. Patching with GND.
+######## Missing driver on net \lm8_inst/DIPSWGPIO_DAT_O_7__I_0/EDGE_CAPTURE[1]. Patching with GND.
+######## Missing driver on net \lm8_inst/DIPSWGPIO_DAT_O_7__I_0/EDGE_CAPTURE[0]. Patching with GND.
+Removed duplicate sequential element \lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/dout_alu_reg(8 bit), because it is equivalent to \lm8_inst/LM8/u1_isp8_core/din_rd1
+
+INFO - synthesis: Extracted state machine for register '\lm8_inst/LM8interrupts_0__I_0/u_rxcver/cs_state' with one-hot encoding
+State machine has 5 reachable states with original encodings of:
+
+ 000 
+
+ 001 
+
+ 010 
+
+ 011 
+
+ 100 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 00001
+
+ 001 -> 00010
+
+ 010 -> 00100
+
+ 011 -> 01000
+
+ 100 -> 10000
+
+INFO - synthesis: Extracted state machine for register '\lm8_inst/LM8interrupts_0__I_0/u_txmitt/tx_state' with one-hot encoding
+State machine has 7 reachable states with original encodings of:
+
+ 000 
+
+ 001 
+
+ 010 
+
+ 011 
+
+ 100 
+
+ 101 
+
+ 110 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 0000001
+
+ 001 -> 0000010
+
+ 010 -> 0000100
+
+ 011 -> 0001000
+
+ 100 -> 0010000
+
+ 101 -> 0100000
+
+ 110 -> 1000000
+
+INFO - synthesis: Extracted state machine for register '\lm8_inst/LM8interrupts_0__I_0/u_intface/cs_state' with one-hot encoding
+State machine has 4 reachable states with original encodings of:
+
+ 000 
+
+ 001 
+
+ 010 
+
+ 011 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 0001
+
+ 001 -> 0010
+
+ 010 -> 0100
+
+ 011 -> 1000
+
+
+
+
+WARNING - synthesis: Bit 0 of Register \lm8_inst/LM8interrupts_0__I_0/u_rxcver/cs_state_FSM is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lm8_inst/LM8interrupts_0__I_0/u_rxcver/cs_state_FSM is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lm8_inst/LM8interrupts_0__I_0/u_rxcver/cs_state_FSM is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lm8_inst/LM8interrupts_0__I_0/u_txmitt/tx_state_FSM is stuck at Zero
+WARNING - synthesis: d:/latticemico8projects/lm8_tutor/platform1/soc/../soc/platform1.v(275): Register \lm8_inst/arbiter/selected_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: D:/LatticeMico8Projects/lm8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v(134): Register \lm8_inst/LM8/u1_isp8_core/u1_lm8_interrupt/ip_i1 is stuck at Zero. VDB-5013
+GSR instance connected to net \lm8_inst/counter[2].
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+WARNING - synthesis: Appending of file D:\LatticeMico8Projects\lm8_tutor\platform1/pmi_distributed_dpramMbnonen853292a5343.v to file D:\LatticeMico8Projects\lm8_tutor\platform1/platform1_vhd_prim.v failed.
+Results of NGD DRC are available in platform1_vhd_drc.log.
+Loading NGL library 'D:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGO design 'lngotmp/pmi_ram_dqmnhscratchpad_initsadn8112048f9ce2e6.ngo'...
+Loading NGO design 'lngotmp/pmi_ram_dqmnhprom_initsadn18112048f3df93e.ngo'...
+Loading NGO design 'lngotmp/pmi_distributed_dprammbnonen853292a5343.ngo'...
+Loading NGO design 'lngotmp/pmi_distributed_sprammbnonen1341693c3d10.ngo'...
+Loading NGO design 'lngotmp/pmi_addsubmo884942741.ngo'...
+WARNING - synthesis: logical net 'GND_net' has no load.
+WARNING - synthesis: logical net 'lm8_inst/LM8/u1_isp8_core/GND_net' has no load.
+WARNING - synthesis: DRC complete with 2 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file platform1_platform1.ngd.
+
+################### Begin Area Report (platform1_vhd)######################
+Number of register bits => 264 of 4635 (5 % )
+CCU2D => 38
+FD1P3AX => 72
+FD1P3AY => 17
+FD1P3BX => 9
+FD1P3DX => 36
+FD1P3IX => 31
+FD1S3AX => 43
+FD1S3AY => 9
+FD1S3BX => 2
+FD1S3DX => 40
+FD1S3IX => 5
+GSR => 1
+IB => 7
+LUT4 => 549
+OB => 9
+PFUMX => 44
+pmi_addsubMo884942741 => 1
+pmi_distributed_dpramMbnonen853292a5343 => 2
+pmi_distributed_spramMbnonen1341693c3d10 => 1
+pmi_ram_dqMnhprom_initsadn18112048f3df93e => 1
+pmi_ram_dqMnhscratchpad_initsadn8112048f9ce2e6 => 1
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_i_c, loads : 271
+Clock Enable Nets
+Number of Clock Enables: 30
+Top 10 highest fanout Clock Enables:
+  Net : lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/addr_cyc, loads : 17
+  Net : lm8_inst/LM8interrupts_0__I_0/u_txmitt/clk_i_c_enable_74, loads : 16
+  Net : lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/data_cyc, loads : 16
+  Net : lm8_inst/LM8interrupts_0__I_0/u_rxcver/clk_i_c_enable_88, loads : 10
+  Net : lm8_inst/LM8interrupts_0__I_0/u_txmitt/clk_i_c_enable_73, loads : 8
+  Net : lm8_inst/LM8interrupts_0__I_0/u_intface/clk_i_c_enable_46, loads : 8
+  Net : lm8_inst/LM8interrupts_0__I_0/u_rxcver/clk_i_c_enable_45, loads : 8
+  Net : lm8_inst/LM8interrupts_0__I_0/u_rxcver/clk_i_c_enable_92, loads : 4
+  Net : lm8_inst/LM8interrupts_0__I_0/u_txmitt/clk_i_c_enable_101, loads : 3
+  Net : lm8_inst/clk_i_c_enable_69, loads : 3
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : lm8_inst/LM8/u1_isp8_core/u1_lm8_interrupt/n6992, loads : 92
+  Net : lm8_inst/LM8/prom_ready, loads : 61
+  Net : lm8_inst/LM8interrupts_0__I_0/u_rxcver/n45, loads : 36
+  Net : lm8_inst/arbiter/selected_1, loads : 31
+  Net : lm8_inst/LM8interrupts_0__I_0/u_txmitt/counter_0, loads : 29
+  Net : lm8_inst/LM8interrupts_0__I_0/u_txmitt/n2127, loads : 29
+  Net : lm8_inst/LM8interrupts_0__I_0/u_rxcver/rx_idle_N_1293, loads : 22
+  Net : lm8_inst/LM8interrupts_0__I_0/u_txmitt/n288, loads : 20
+  Net : lm8_inst/LM8/ext_wb_state, loads : 19
+  Net : lm8_inst/LM8interrupts_0__I_0/u_rxcver/n77, loads : 19
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_i_c]                 |  200.000 MHz|   40.967 MHz|    14 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 95.180  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 3.073  secs
+--------------------------------------------------------------

@@ -1,0 +1,332 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sun Oct 21 01:19:00 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     platform1_top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_in]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 20.176ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \platform1_u/LM8/genblk1.first_fetch_59  (from clk_in +)
+   Destination:    FD1S3AY    D              \platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3  (to clk_in +)
+
+   Delay:                  25.016ns  (25.4% logic, 74.6% route), 13 logic levels.
+
+ Constraint Details:
+
+     25.016ns data_path \platform1_u/LM8/genblk1.first_fetch_59 to \platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 20.176ns
+
+ Path Details: \platform1_u/LM8/genblk1.first_fetch_59 to \platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \platform1_u/LM8/genblk1.first_fetch_59 (from clk_in)
+Route        60   e 2.322                                  \platform1_u/LM8/prom_ready
+LUT4        ---     0.493              A to Z              \platform1_u/LM8/i1_2_lut_rep_186
+Route        15   e 1.811                                  \platform1_u/LM8/n7145
+LUT4        ---     0.493              C to Z              \platform1_u/LM8/i1_2_lut_rep_137_3_lut_4_lut
+Route         5   e 1.405                                  \platform1_u/LM8/n7096
+LUT4        ---     0.493              B to Z              \platform1_u/LM8/u1_isp8_core/i5994_3_lut_rep_124_4_lut
+Route        12   e 1.657                                  \platform1_u/LM8/n7083
+LUT4        ---     0.493              A to Z              \platform1_u/LM8/ext_cyc_I_15_3_lut_rep_119_4_lut_4_lut
+Route        10   e 1.604                                  \platform1_u/LM8/n7078
+LUT4        ---     0.493              A to Z              \platform1_u/LM8/i1_2_lut_rep_117_3_lut
+Route        14   e 1.807                                  \platform1_u/n7076
+LUT4        ---     0.493              A to Z              \platform1_u/arbiter/i1_3_lut_4_lut_4_lut
+Route         2   e 1.141                                  \platform1_u/arbiter/n102
+LUT4        ---     0.493              B to Z              \platform1_u/arbiter/i2_4_lut_adj_142
+Route         5   e 1.405                                  \platform1_u/n6483
+LUT4        ---     0.493              C to Z              \platform1_u/i1_2_lut_rep_109_3_lut_4_lut
+Route         4   e 1.340                                  \platform1_u/clk_in_enable_42
+LUT4        ---     0.493              B to Z              \platform1_u/LM8interrupts_0__I_0/u_rxcver/i1_4_lut_adj_128
+Route         2   e 1.141                                  \platform1_u/LM8interrupts_0__I_0/u_rxcver/n68_adj_1432
+LUT4        ---     0.493              B to Z              \platform1_u/LM8interrupts_0__I_0/u_rxcver/i1_2_lut_adj_127
+Route         2   e 1.141                                  \platform1_u/LM8interrupts_0__I_0/n2180
+LUT4        ---     0.493              C to Z              \platform1_u/LM8interrupts_0__I_0/u_intface/i1_4_lut_adj_114
+Route         1   e 0.941                                  \platform1_u/LM8interrupts_0__I_0/u_intface/n6
+LUT4        ---     0.493              A to Z              \platform1_u/LM8interrupts_0__I_0/u_intface/i2_4_lut_adj_113
+Route         1   e 0.941                                  \platform1_u/LM8interrupts_0__I_0/u_intface/n5992
+                  --------
+                   25.016  (25.4% logic, 74.6% route), 13 logic levels.
+
+
+Error:  The following path violates requirements by 20.176ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \platform1_u/LM8/genblk1.first_fetch_59  (from clk_in +)
+   Destination:    FD1S3AY    D              \platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3  (to clk_in +)
+
+   Delay:                  25.016ns  (25.4% logic, 74.6% route), 13 logic levels.
+
+ Constraint Details:
+
+     25.016ns data_path \platform1_u/LM8/genblk1.first_fetch_59 to \platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 20.176ns
+
+ Path Details: \platform1_u/LM8/genblk1.first_fetch_59 to \platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \platform1_u/LM8/genblk1.first_fetch_59 (from clk_in)
+Route        60   e 2.322                                  \platform1_u/LM8/prom_ready
+LUT4        ---     0.493              A to Z              \platform1_u/LM8/i1_2_lut_rep_186
+Route        15   e 1.811                                  \platform1_u/LM8/n7145
+LUT4        ---     0.493              C to Z              \platform1_u/LM8/i1_2_lut_rep_137_3_lut_4_lut
+Route         5   e 1.405                                  \platform1_u/LM8/n7096
+LUT4        ---     0.493              B to Z              \platform1_u/LM8/u1_isp8_core/i5994_3_lut_rep_124_4_lut
+Route        12   e 1.657                                  \platform1_u/LM8/n7083
+LUT4        ---     0.493              A to Z              \platform1_u/LM8/ext_cyc_I_15_3_lut_rep_119_4_lut_4_lut
+Route        10   e 1.604                                  \platform1_u/LM8/n7078
+LUT4        ---     0.493              A to Z              \platform1_u/LM8/i1_2_lut_rep_117_3_lut
+Route        14   e 1.807                                  \platform1_u/n7076
+LUT4        ---     0.493              B to Z              \platform1_u/i1_4_lut_4_lut
+Route         2   e 1.141                                  \platform1_u/n13
+LUT4        ---     0.493              A to Z              \platform1_u/arbiter/i2_4_lut_adj_142
+Route         5   e 1.405                                  \platform1_u/n6483
+LUT4        ---     0.493              C to Z              \platform1_u/i1_2_lut_rep_109_3_lut_4_lut
+Route         4   e 1.340                                  \platform1_u/clk_in_enable_42
+LUT4        ---     0.493              B to Z              \platform1_u/LM8interrupts_0__I_0/u_rxcver/i1_4_lut_adj_128
+Route         2   e 1.141                                  \platform1_u/LM8interrupts_0__I_0/u_rxcver/n68_adj_1432
+LUT4        ---     0.493              B to Z              \platform1_u/LM8interrupts_0__I_0/u_rxcver/i1_2_lut_adj_127
+Route         2   e 1.141                                  \platform1_u/LM8interrupts_0__I_0/n2180
+LUT4        ---     0.493              C to Z              \platform1_u/LM8interrupts_0__I_0/u_intface/i1_4_lut_adj_114
+Route         1   e 0.941                                  \platform1_u/LM8interrupts_0__I_0/u_intface/n6
+LUT4        ---     0.493              A to Z              \platform1_u/LM8interrupts_0__I_0/u_intface/i2_4_lut_adj_113
+Route         1   e 0.941                                  \platform1_u/LM8interrupts_0__I_0/u_intface/n5992
+                  --------
+                   25.016  (25.4% logic, 74.6% route), 13 logic levels.
+
+
+Error:  The following path violates requirements by 20.172ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \platform1_u/LM8/genblk1.first_fetch_59  (from clk_in +)
+   Destination:    FD1S3AY    D              \platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3  (to clk_in +)
+
+   Delay:                  25.012ns  (25.4% logic, 74.6% route), 13 logic levels.
+
+ Constraint Details:
+
+     25.012ns data_path \platform1_u/LM8/genblk1.first_fetch_59 to \platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 20.172ns
+
+ Path Details: \platform1_u/LM8/genblk1.first_fetch_59 to \platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \platform1_u/LM8/genblk1.first_fetch_59 (from clk_in)
+Route        60   e 2.322                                  \platform1_u/LM8/prom_ready
+LUT4        ---     0.493              C to Z              \platform1_u/LM8/i2_3_lut_rep_185
+Route        14   e 1.807                                  \platform1_u/LM8/n7144
+LUT4        ---     0.493              D to Z              \platform1_u/LM8/i1_2_lut_rep_137_3_lut_4_lut
+Route         5   e 1.405                                  \platform1_u/LM8/n7096
+LUT4        ---     0.493              B to Z              \platform1_u/LM8/u1_isp8_core/i5994_3_lut_rep_124_4_lut
+Route        12   e 1.657                                  \platform1_u/LM8/n7083
+LUT4        ---     0.493              A to Z              \platform1_u/LM8/ext_cyc_I_15_3_lut_rep_119_4_lut_4_lut
+Route        10   e 1.604                                  \platform1_u/LM8/n7078
+LUT4        ---     0.493              A to Z              \platform1_u/LM8/i1_2_lut_rep_117_3_lut
+Route        14   e 1.807                                  \platform1_u/n7076
+LUT4        ---     0.493              B to Z              \platform1_u/i1_4_lut_4_lut
+Route         2   e 1.141                                  \platform1_u/n13
+LUT4        ---     0.493              A to Z              \platform1_u/arbiter/i2_4_lut_adj_142
+Route         5   e 1.405                                  \platform1_u/n6483
+LUT4        ---     0.493              C to Z              \platform1_u/i1_2_lut_rep_109_3_lut_4_lut
+Route         4   e 1.340                                  \platform1_u/clk_in_enable_42
+LUT4        ---     0.493              B to Z              \platform1_u/LM8interrupts_0__I_0/u_rxcver/i1_4_lut_adj_128
+Route         2   e 1.141                                  \platform1_u/LM8interrupts_0__I_0/u_rxcver/n68_adj_1432
+LUT4        ---     0.493              B to Z              \platform1_u/LM8interrupts_0__I_0/u_rxcver/i1_2_lut_adj_127
+Route         2   e 1.141                                  \platform1_u/LM8interrupts_0__I_0/n2180
+LUT4        ---     0.493              C to Z              \platform1_u/LM8interrupts_0__I_0/u_intface/i1_4_lut_adj_114
+Route         1   e 0.941                                  \platform1_u/LM8interrupts_0__I_0/u_intface/n6
+LUT4        ---     0.493              A to Z              \platform1_u/LM8interrupts_0__I_0/u_intface/i2_4_lut_adj_113
+Route         1   e 0.941                                  \platform1_u/LM8interrupts_0__I_0/u_intface/n5992
+                  --------
+                   25.012  (25.4% logic, 74.6% route), 13 logic levels.
+
+Warning: 25.176 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_in]                  |     5.000 ns|    25.176 ns|    13 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\platform1_u/LM8/n7078                  |      10|    3002|     73.29%
+                                        |        |        |
+\platform1_u/LM8/n7083                  |      12|    2637|     64.38%
+                                        |        |        |
+\platform1_u/n7076                      |      14|    2457|     59.99%
+                                        |        |        |
+\platform1_u/n6483                      |       5|    2320|     56.64%
+                                        |        |        |
+\platform1_u/n7067                      |       4|    1456|     35.55%
+                                        |        |        |
+\platform1_u/LM8/prom_ready             |      60|    1416|     34.57%
+                                        |        |        |
+\platform1_u/LM8/n7096                  |       5|    1290|     31.49%
+                                        |        |        |
+\platform1_u/n7120                      |       4|     912|     22.27%
+                                        |        |        |
+\platform1_u/LM8interrupts_0__I_0/u_rxcv|        |        |
+er/n30                                  |       1|     896|     21.88%
+                                        |        |        |
+\platform1_u/LM8interrupts_0__I_0/u_rxcv|        |        |
+er/n35                                  |      38|     896|     21.88%
+                                        |        |        |
+\platform1_u/div_wr_strobe              |       2|     896|     21.88%
+                                        |        |        |
+\platform1_u/n13                        |       2|     882|     21.53%
+                                        |        |        |
+\platform1_u/arbiter/n102               |       2|     880|     21.48%
+                                        |        |        |
+\platform1_u/LM8interrupts_0__I_0/u_rxcv|        |        |
+er/n5759                                |       1|     720|     17.58%
+                                        |        |        |
+\platform1_u/LM8interrupts_0__I_0/u_rxcv|        |        |
+er/n5752                                |       1|     672|     16.41%
+                                        |        |        |
+\platform1_u/LM8interrupts_0__I_0/u_rxcv|        |        |
+er/n5751                                |       1|     660|     16.11%
+                                        |        |        |
+\platform1_u/LM8interrupts_0__I_0/u_rxcv|        |        |
+er/n5760                                |       1|     628|     15.33%
+                                        |        |        |
+\platform1_u/LM8interrupts_0__I_0/u_rxcv|        |        |
+er/n28                                  |       1|     600|     14.65%
+                                        |        |        |
+\platform1_u/LM8interrupts_0__I_0/u_rxcv|        |        |
+er/n5758                                |       1|     572|     13.96%
+                                        |        |        |
+\platform1_u/LM8interrupts_0__I_0/u_rxcv|        |        |
+er/n5750                                |       1|     536|     13.09%
+                                        |        |        |
+\platform1_u/n557                       |      16|     528|     12.89%
+                                        |        |        |
+\platform1_u/LM8/n7144                  |      14|     488|     11.91%
+                                        |        |        |
+\platform1_u/LM8/n7145                  |      15|     488|     11.91%
+                                        |        |        |
+\platform1_u/LM8interrupts_0__I_0/u_rxcv|        |        |
+er/n5761                                |       1|     476|     11.62%
+                                        |        |        |
+\platform1_u/clk_in_enable_68           |       8|     448|     10.94%
+                                        |        |        |
+\platform1_u/clk_in_enable_76           |       8|     448|     10.94%
+                                        |        |        |
+\platform1_u/LM8/n7143                  |       6|     432|     10.55%
+                                        |        |        |
+\platform1_u/clk_in_enable_42           |       4|     419|     10.23%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 4096  Score: 51637979
+
+Constraints cover  50764 paths, 910 nets, and 2605 connections (97.5% coverage)
+
+
+Peak memory: 98570240 bytes, TRCE: 9326592 bytes, DLYMAN: 163840 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

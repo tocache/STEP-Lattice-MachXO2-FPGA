@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "D:/LatticeMico8Projects/lm8_tutor"  

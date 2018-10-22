@@ -1,0 +1,290 @@
+
+Loading design for application trce from file platform1_platform1_map.ncd.
+Design name: platform1_vhd
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: D:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.2.115
+Sun Oct 21 12:09:52 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o platform1_platform1.tw1 -gui -msgset D:/LatticeMico8Projects/lm8_tutor/promote.xml platform1_platform1_map.ncd platform1_platform1.prf 
+Design file:     platform1_platform1_map.ncd
+Preference file: platform1_platform1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_i_c" 57.113000 MHz ;
+            4096 items scored, 2716 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 4.399ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           lm8_inst/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0(ASIC)  (from clk_i_c +)
+   Destination:    FF         Data in        lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/ext_addr_cyc_153  (to clk_i_c +)
+
+   Delay:              21.742ns  (46.7% logic, 53.3% route), 11 logic levels.
+
+ Constraint Details:
+
+     21.742ns physical path delay lm8_inst/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_86 exceeds
+     17.509ns delay constraint less
+      0.166ns DIN_SET requirement (totaling 17.343ns) by 4.399ns
+
+ Physical Path Details:
+
+      Data path lm8_inst/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_86:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     4.979 *3e_1_1_0.CLKA to *3e_1_1_0.DOA8 lm8_inst/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 (from clk_i_c)
+ROUTE         4   e 1.234 *3e_1_1_0.DOA8 to */SLICE_291.B0 lm8_inst/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_17
+CTOF_DEL    ---     0.495 */SLICE_291.B0 to */SLICE_291.F0 lm8_inst/LM8/SLICE_291
+ROUTE        11   e 1.234 */SLICE_291.F0 to */SLICE_136.A1 lm8_inst/LM8/genblk1.instr_mem_out_17
+CTOF_DEL    ---     0.495 */SLICE_136.A1 to */SLICE_136.F1 lm8_inst/LM8/SLICE_136
+ROUTE         9   e 1.234 */SLICE_136.F1 to */SLICE_319.D1 lm8_inst/LM8/n7121
+CTOF_DEL    ---     0.495 */SLICE_319.D1 to */SLICE_319.F1 lm8_inst/LM8/SLICE_319
+ROUTE         8   e 1.234 */SLICE_319.F1 to */SLICE_270.B1 lm8_inst/LM8/n7098
+CTOF_DEL    ---     0.495 */SLICE_270.B1 to */SLICE_270.F1 lm8_inst/SLICE_270
+ROUTE         1   e 1.234 */SLICE_270.F1 to */SLICE_237.C1 lm8_inst/n6
+CTOF_DEL    ---     0.495 */SLICE_237.C1 to */SLICE_237.F1 lm8_inst/arbiter/SLICE_237
+ROUTE        16   e 1.234 */SLICE_237.F1 to */SLICE_286.C1 lm8_inst/n287
+CTOF_DEL    ---     0.495 */SLICE_286.C1 to */SLICE_286.F1 lm8_inst/SLICE_286
+ROUTE         2   e 1.234 */SLICE_286.F1 to *t/SLICE_91.B0 lm8_inst/n7070
+CTOF_DEL    ---     0.495 *t/SLICE_91.B0 to *t/SLICE_91.F0 lm8_inst/SLICE_91
+ROUTE         5   e 0.480 *t/SLICE_91.F0 to *t/SLICE_91.A1 lm8_inst/SHAREDBUS_ACK_O
+CTOF_DEL    ---     0.495 *t/SLICE_91.A1 to *t/SLICE_91.F1 lm8_inst/SLICE_91
+ROUTE         2   e 1.234 *t/SLICE_91.F1 to */SLICE_251.B0 lm8_inst/n7057
+CTOOFX_DEL  ---     0.721 */SLICE_251.B0 to *LICE_251.OFX0 lm8_inst/LM8/i6107/SLICE_251
+ROUTE         2   e 1.234 *LICE_251.OFX0 to *l/SLICE_86.C0 lm8_inst/LM8/ext_mem_ready
+CTOF_DEL    ---     0.495 *l/SLICE_86.C0 to *l/SLICE_86.F0 lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_86
+ROUTE         1   e 0.001 *l/SLICE_86.F0 to */SLICE_86.DI0 lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/ext_addr_cyc_nxt (to clk_i_c)
+                  --------
+                   21.742   (46.7% logic, 53.3% route), 11 logic levels.
+
+Warning:  45.645MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_i_c" 57.113000 MHz ; |   57.113 MHz|   45.645 MHz|  11 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+lm8_inst/LM8/u1_isp8_core/carry_flag_nxt|        |        |
+_N_861                                  |       2|     964|     35.49%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/cout_alu      |       1|     960|     35.35%
+                                        |        |        |
+lm8_inst/LM8/carry_add_int              |       1|     864|     31.81%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/pmi|        |        |
+_addsubMachXO2off88/co3                 |       1|     796|     29.31%
+                                        |        |        |
+lm8_inst/LM8/n7098                      |       8|     786|     28.94%
+                                        |        |        |
+lm8_inst/n6                             |       1|     614|     22.61%
+                                        |        |        |
+lm8_inst/n287                           |      16|     614|     22.61%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/pmi|        |        |
+_addsubMachXO2off88/co2                 |       1|     596|     21.94%
+                                        |        |        |
+lm8_inst/clk_i_c_enable_12              |      12|     528|     19.44%
+                                        |        |        |
+lm8_inst/LM8/n7121                      |       9|     492|     18.11%
+                                        |        |        |
+lm8_inst/LM8/n7083                      |      11|     490|     18.04%
+                                        |        |        |
+lm8_inst/LM8/n7077                      |       8|     490|     18.04%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cn|        |        |
+tl/pmi_distributed_spramMachXO2binarynon|        |        |
+enoreg13416/mem_0_0/WD0_INT             |       1|     484|     17.82%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/carry_flag_asy|        |        |
+nc                                      |       1|     484|     17.82%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/n1474         |       1|     480|     17.67%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/ca|        |        |
+rry_flag_nxt_N_860                      |       1|     480|     17.67%
+                                        |        |        |
+lm8_inst/LM8/n7106                      |      10|     448|     16.49%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cn|        |        |
+tl/n6574                                |       1|     404|     14.87%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/intr_ack_nxt  |      13|     404|     14.87%
+                                        |        |        |
+lm8_inst/LM8/genblk1.instr_mem_out_14   |      11|     404|     14.87%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/pmi|        |        |
+_addsubMachXO2off88/co1                 |       1|     388|     14.29%
+                                        |        |        |
+lm8_inst/n7075                          |      22|     376|     13.84%
+                                        |        |        |
+lm8_inst/LM8/call_is_valid              |       3|     360|     13.25%
+                                        |        |        |
+lm8_inst/LM8/call                       |       1|     352|     12.96%
+                                        |        |        |
+lm8_inst/LM8/genblk1.instr_mem_out_16   |      16|     330|     12.15%
+                                        |        |        |
+lm8_inst/LM8/genblk1.instr_mem_out_17   |      11|     294|     10.82%
+                                        |        |        |
+lm8_inst/n7059                          |       4|     288|     10.60%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_i_c   Source: clk_i.PAD   Loads: 199
+   Covered under: FREQUENCY NET "clk_i_c" 57.113000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 2716  Score: 3761202
+Cumulative negative slack: 3761202
+
+Constraints cover 72985 paths, 1 nets, and 3257 connections (96.22% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.2.115
+Sun Oct 21 12:09:53 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o platform1_platform1.tw1 -gui -msgset D:/LatticeMico8Projects/lm8_tutor/promote.xml platform1_platform1_map.ncd platform1_platform1.prf 
+Design file:     platform1_platform1_map.ncd
+Preference file: platform1_platform1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_i_c" 57.113000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.351ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              lm8_inst/LM8interrupts_0__I_0/u_txmitt/tx_in_stop_s_143  (from clk_i_c +)
+   Destination:    FF         Data in        lm8_inst/LM8interrupts_0__I_0/u_txmitt/tx_in_stop_s1_141  (to clk_i_c +)
+
+   Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.332ns physical path delay SLICE_215 to SLICE_215 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
+
+ Physical Path Details:
+
+      Data path SLICE_215 to SLICE_215:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133  SLICE_215.CLK to   SLICE_215.Q0 SLICE_215 (from clk_i_c)
+ROUTE         2   e 0.199   SLICE_215.Q0 to   SLICE_215.M1 lm8_inst/LM8interrupts_0__I_0/u_txmitt/tx_in_stop_s (to clk_i_c)
+                  --------
+                    0.332   (40.1% logic, 59.9% route), 1 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_i_c" 57.113000 MHz ; |     0.000 ns|     0.351 ns|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_i_c   Source: clk_i.PAD   Loads: 199
+   Covered under: FREQUENCY NET "clk_i_c" 57.113000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 72985 paths, 1 nets, and 3363 connections (99.35% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 2716 (setup), 0 (hold)
+Score: 3761202 (setup), 0 (hold)
+Cumulative negative slack: 3761202 (3761202+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
