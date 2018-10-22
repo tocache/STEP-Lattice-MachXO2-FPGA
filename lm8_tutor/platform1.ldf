@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="platform1" device="LCMXO2-4000HC-4MG132C" default_implementation="platform1">
+    <Options/>
+    <Implementation title="platform1" dir="platform1" description="platform1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="platform1_vhd" top="platform1_vhd"/>
+        <Source name="platform1/soc/platform1_top.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="platform1/soc/platform1_vhd.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="platform1_vhd"/>
+        </Source>
+        <Source name="platform1.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="platform1/platform1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="platform11.sty"/>
+</BaliProject>

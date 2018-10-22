@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userSetting name="D:/LatticeMico8Projects/lm8_tutor/promote.xml" version="Diamond (64-bit) 3.10.2.115" date="Sun Oct 21 20:29:53 2018" vendor="Lattice Semiconductor Corporation" >
+  <msg mid="35921504" type="Info" />
+  <msg mid="35931002" type="Warning" />
+  <msg mid="35921400" type="Info" />
+  <msg mid="35921205" type="Warning" />
+  <msg mid="35901209" type="Warning" />
+  <msg mid="35901328" type="Info" />
+  <msg mid="35901221" type="Warning" />
+  <msg mid="35921327" type="Error" />
+  <msg mid="35901199" type="Warning" />
+</userSetting>
