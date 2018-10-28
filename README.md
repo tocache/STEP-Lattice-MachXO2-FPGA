@@ -3,6 +3,10 @@ A repository of my Lattice MachXO2 FPGA, using a STEP MaxhXO2 development board 
 
 <img src="https://github.com/tocache/STEP-Lattice-MachXO2-FPGA/blob/master/Small-foot-FPGA-Development-Board-Learning-Board-Core-Board-based-on-Lattice-FPGA-STEP.jpg"><br>
 
+Project list:<br>
+- XOR Gate, using VHDL
+- l8_tutor, using Mico8 and C.  
+
 References:<br>
 Lattice - Mico8 Free Soft Microcontroller https://www.latticesemi.com/en/Products/DesignSoftwareAndIP/IntellectualProperty/IPCore/IPCores02/Mico8 <br>
 Hackaday - Mico8 quick check: https://hackaday.io/project/26175-hdl-training-board-by-fpga-for-real-beginner/log/65632-quick-check-of-mico8-a-8-bit-software-cpu-on-lattice-machxo2 <br>
