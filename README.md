@@ -5,7 +5,7 @@ A repository of my Lattice MachXO2 FPGA, using a STEP MaxhXO2 development board 
 
 Project list:<br>
 - XOR Gate, using VHDL
-- l8_tutor, using Mico8 and C.  
+- lm8_tutor, using Mico8 and C.  
 
 References:<br>
 - Lattice - Mico8 Free Soft Microcontroller https://www.latticesemi.com/en/Products/DesignSoftwareAndIP/IntellectualProperty/IPCore/IPCores02/Mico8 <br>
