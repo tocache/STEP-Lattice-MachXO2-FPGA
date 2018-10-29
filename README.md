@@ -8,7 +8,8 @@ Project list:<br>
 - lm8_tutor, using Mico8 and C.  
 
 References:<br>
-- Lattice Diamond Software - http://www.latticesemi.com/latticediamond
+- Lattice Diamond Software - http://www.latticesemi.com/latticediamond <br>
+- Lattice Diamond Request License (free) - http://www.latticesemi.com/Support/Licensing/DiamondAndiCEcube2SoftwareLicensing/DiamondFree.aspx <br>
 - Lattice - Mico8 Free Soft Microcontroller https://www.latticesemi.com/en/Products/DesignSoftwareAndIP/IntellectualProperty/IPCore/IPCores02/Mico8 <br>
 - Hackaday - Mico8 quick check: https://hackaday.io/project/26175-hdl-training-board-by-fpga-for-real-beginner/log/65632-quick-check-of-mico8-a-8-bit-software-cpu-on-lattice-machxo2 <br>
 - Remy Luisant - The lesser known CPUs: Lattice Mico8 https://luisant.ca/mico8 <br>
